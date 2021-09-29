@@ -10,7 +10,7 @@ list = [
 def main():
     for cishu in range(100):
         random.shuffle(list)
-        os.popen("adb shell am start -a android.intent.action.SENDTO -d sms:15724627660 --es sms_body  "+random.choice(list))
+        os.popen("adb shell am start -a android.intent.action.SENDTO -d sms:13200000000 --es sms_body  "+random.choice(list))
         time.sleep(1)
         for i in range(random.randint(5, 9), 0, -1):
             print("\r等待{}秒后发短信\n".format(i), end='')
